@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Viggenere</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <header>Cifrado Viggenere</header>
+    <div class="contenedor">
+        <div class="datos">
+            <article class="datos_1">
+                <p><h3>Por favor ingrese el texto a cifrar</h3></p>
+                <br>
+                <p><input type="text" id="cadena" placeholder="Texto"></p>
+                <br>
+                <p><input class="boton" type="button" value="Cifrar" onclick="comprobarLongitudCodificar()">
+                <input class="boton" type="button" value="Decifrar" onclick="comprobarLongitudDecodificar()">
+                <input class="boton" type="button" value="Reiniciar" onclick="reiniciar()"></p>
+            </article>
+            <aside>
+                <p><h3>Por favor ingrese la palabra clave</h3></p>
+                <br>
+                <input type="text" name="posicionamiento" id="posicionamiento" placeholder="Clave" onpaste="return false;" ondrop="return false;" min="0">
+            </aside>
+        </div>
+        <div class="resultado_contenedor">
+            <article>
+                <p><h3>Este es el resultado:</h3></p>
+                <br>
+                <div class="resultado" id="resultado">
+                    <textarea id="res" placeholder="RESULTADO" onpaste="return false;" ondrop="return false;"></textarea>
+                </div>
+                <br>
+                <p><input class="boton" type="button" value="Copiar" onclick="colocar()"></p>
+            </article>                      
+        </div>
+    </div>
+    <script src="js/vigi.js"></script>
+</body>
+<footer>
+    By Soulles A4 <br>
+    Basilio Hernandez Gerardo 5IV8
+</footer>
+</html>
